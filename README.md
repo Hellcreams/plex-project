@@ -32,7 +32,7 @@
 
 #### DVD 데이터 변환 과정
 * *DVD_decrypter.exe*를 사용하여, 각 DVD를 리핑하여 별도 SSD에 저장한다.
-* MakeMKV를 통해, 필요한 영상만을 추출하여 [[#DVD 데이터 변환 정보|소스 정보]]에 맞춰 인코딩한다.
+* MakeMKV를 통해, 필요한 영상만을 추출하여 1)번 항목에 맞춰 인코딩한다.
 
 ### 2) 요구사항에 따른 하드웨어 자원 선정
 #### 최종안
@@ -43,7 +43,7 @@
 #### 고려사항
 ##### 요구사항
 1. 부모님의 전기비 및 기기 소음에 대한 우려를 반영하여 CPU를 선정하였습니다.
-2. 기기 내 작동하는 OS가 *Ubuntu Server* 이고, 서비스가 Plex, Prometheus, Grafana, Node-Exporter, [자체 제작 프로그램]인 점을 고려하여 적절한 CPU 및 RAM 용량을 고려하였습니다.
+2. 기기 내 작동하는 OS가 *Ubuntu Server* 이고, 서비스가 Plex, Prometheus, Grafana, Node-Exporter, 자체 제작 프로그램(plex-exporter.py)인 점을 고려하여 적절한 CPU 및 RAM 용량을 고려하였습니다.
 3.  백업은 진행하되, 하드웨어 구조 상 RAID 구성은 과하다고 판단하여 적절한 SSD, HDD를 선정하였습니다.
 4. subtitle burn-in 현상이 발생 시 과도한 CPU 사용 현상이 발생하는 점을 고려하여, 하드웨어 성능 향상 대신 burn-in 현상 발생 요소 제거 및 관련 현상 모니터링 체계를 구축하기로 결정하였습니다.
 
