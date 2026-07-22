@@ -21,3 +21,6 @@ done
 
 cd ..
 rm -r ./temp
+
+# 스크립트 새로고침
+curl "http://127.0.0.1:32400/library/sections/all/refresh"
